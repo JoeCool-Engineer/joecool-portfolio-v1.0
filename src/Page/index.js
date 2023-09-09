@@ -21,7 +21,7 @@ const Page = ({currentPage}) => {
     }
   }
   return (
-  <section className='container'>
+  <section className='container py-4'>
     <h2 className='mb-3'>
       {capitalize(currentPage)}</h2>
     {renderPage(currentPage)}

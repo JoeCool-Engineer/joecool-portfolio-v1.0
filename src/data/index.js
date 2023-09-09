@@ -35,10 +35,10 @@ export const projects= [
         link: 'https://joecool-engineer.github.io/JoeCool_Day_Scheduler/', /* The deployed site */
         repo: 'https://github.com/JoeCool-Engineer/JoeCool_Day_Scheduler.git'  /* The repository site */
     },
-    {
-        name: 'BuonosApp',
-        description: 'Pizza App for online ordering (Team Project)',
-        link: 'https://buonos-pizza-3-a5b81b172f5e.herokuapp.com/',
-        repo: 'https://github.com/jeremiahmiranda79/buonos-pizza-3.git'
-    },
+    // {
+    //     name: 'BuonosApp',
+    //     description: 'Pizza App for online ordering (Team Project)',
+    //     link: 'https://buonos-pizza-3-a5b81b172f5e.herokuapp.com/',
+    //     repo: 'https://github.com/jeremiahmiranda79/buonos-pizza-3.git'
+    // },
 ]

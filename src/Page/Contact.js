@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -6,6 +7,9 @@ const Contact = () => {
     email: "",
     message: ""
   })
+
+  const [btnText, setBtnText] = useState('Submit');
+  const form = useRef();
 
   const handleChange = (event) => {
     event.preventDefault()
@@ -17,10 +21,21 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     console.log('formState: ', formState)
+    emailjs.sendForm('JoeCoolEngineering', 'template_6f8qkd2', form.current, 'iORfQFQu1juuozACx')
+    .then((result) => {
+        console.log(result.text);
+        setBtnText('Message Sent!')
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000)  
+    }, (error) => {
+        console.log(error.text);
+        setBtnText('Error!')
+    });
   }
 
   return (
-    <form onSubmit={ handleSubmit }>
+    <form ref={ form } onSubmit={ handleSubmit }>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">Name</label>
         <input type="text" name="name" className="form-control" placeholder="John Doe" defaultValue={ formState.name } onChange={ handleChange } />
@@ -37,7 +52,7 @@ const Contact = () => {
       </div>
 
       <button type="submit" className="btn btn-primary mb-4">
-        Submit
+        {btnText}
       </button>
     </form>
   )

@@ -8,6 +8,8 @@
   --light: #fafafa;
   --dark: #4c6374;
   --darker: #1f3b60;
+  --overlay: rgba(225, 225, 225, 0.8); 
+  --overlayTxt: #1305d8;
 }
 
 html, body {

@@ -1,0 +1,29 @@
+.card-title a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--overlayTxt);
+}
+
+.project-info {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.project-info:hover {
+    opacity: 1;
+    background-color: var(--overlay);    
+}
+
+.card {
+    transition: all 1.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(0.85);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
