@@ -2,7 +2,7 @@
   "name": "joecool-portfolio-v1.0",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JoeCool-Engineer.github.io/joecool-portfolio-v1.0.git",
+  "homepage": "https://joecool-engineer.github.io/joecool-portfolio-v1.0/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
