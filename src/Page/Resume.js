@@ -1,11 +1,12 @@
 import React from 'react'
+import MyPDF from "../assets/resume/RodneyBuller_Systems_Engineer_Lead.pdf"
 
 const Resume = () => {
 
   return (
     <div className='skills'>
       <p>
-        Download my Resume
+        Download my <a href={MyPDF} download="JoeCool_Resume.pdf">Resume</a>
       </p>
       <div className='row mb-5 d-flex'>
 
