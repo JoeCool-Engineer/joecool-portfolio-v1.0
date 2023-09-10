@@ -16,7 +16,7 @@ const About = () => {
         <li>Proven 11-year track record of working 12+ hours 7 days a week while maintaining a level of safety.</li>
         <li>Using Design for Six Sigma tools, incorporated a software package into the Airbus A300 Primus EPIC integration program which has great potential of saving Honeywell at least $1mil across 20 other Primus programs.</li>
         <li>Generated 50+ engineering change orders (ECO/ECN), which documented revisions made to 100+ drawings. Used internal validation process in accordance with design requirements and finalized customer approvals.</li>
-        <li>•	Managed and maintained multi-site project tracker for over 5000 parts with various manufacturing processes to include casting, machining, sheet metal, and additive manufacturing.</li>
+        <li>Managed and maintained multi-site project tracker for over 5000 parts with various manufacturing processes to include casting, machining, sheet metal, and additive manufacturing.</li>
       </ul>
     </>
   )
